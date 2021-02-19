@@ -1,0 +1,21 @@
+syntax= "proto3";
+
+package data;
+
+service Course {
+    rpc Getcourse (Request) returns (Response);
+
+}
+
+message Request {
+    string key=1;
+
+}
+
+message Response{
+     string value=1;
+     int32 count=2;
+     string hour=3;
+     int32 repeat=4;
+
+}
